@@ -97,7 +97,7 @@ export function App() {
       <header className="bg-white shadow-sm fixed w-full top-0 z-50">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <div className="flex items-center">
-            <img  alt="AKIA Gestoria Logo" className="h-20" src="/logo_akia.png" />
+            <img alt="AKIA Gestoria Logo" className="h-20" src="/logo_akia.png" />
           </div>
           <div className="hidden md:flex space-x-8">
             <a href="#qui-som" className="text-gray-700 hover:text-secondary">Qui Som</a>
@@ -105,12 +105,19 @@ export function App() {
             <a href="#equip" className="text-gray-700 hover:text-secondary">Equip</a>
             <a href="#contacte" className="text-gray-700 hover:text-secondary">Contacte</a>
           </div>
-          <Button className="bg-primary hover:bg-primary/90">
-            Demana Cita
-          </Button>
+          <div className="flex space-x-4">
+            <Button className="bg-primary text-white hover:bg-primary/90">
+              Demana Cita
+            </Button>
+            <Button
+                className="bg-primary text-white hover:bg-primary/90"
+                onClick={() => document.getElementById('packs').scrollIntoView({ behavior: 'smooth' })}
+            >
+              Els nostres packs
+            </Button>
+          </div>
         </nav>
       </header>
-
       <main className="pt-20">
         {/* Hero Section */}
         <section className="hero-pattern py-32 sm:py-40">
