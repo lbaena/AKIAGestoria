@@ -10,7 +10,7 @@ export default function AvisLegal() {
       <header className="bg-white shadow-sm fixed w-full top-0 z-50">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <div className="flex items-center">
-            <img src="/logo.png" alt="AKIA Gestoria" className="h-12" />
+            <img src="/logo_akia.png" alt="AKIA Gestoria" className="h-12" />
           </div>
           <Button 
             variant="ghost" 
