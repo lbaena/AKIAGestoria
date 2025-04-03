@@ -106,7 +106,7 @@ export function App() {
             <a href="#contacte" className="text-gray-700 hover:text-secondary">Contacte</a>
           </div>
           <div className="flex space-x-4">
-            <Button className="bg-primary text-white hover:bg-primary/90">
+            <Button className="bg-primary text-white hover:bg-primary/90" id={"demana-cita"}>
               Demana Cita
             </Button>
             <Button
@@ -122,32 +122,32 @@ export function App() {
         {/* Hero Section */}
         <section className="hero-pattern py-32 sm:py-40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center"
+            <motion.div
+                initial={{opacity: 0, y: 20}}
+                animate={{opacity: 1, y: 0}}
+                transition={{duration: 0.8}}
+                className="text-center"
             >
               <h1 className="text-5xl sm:text-7xl font-bold text-gray-900 mb-6">
                 AKIA Gestoria
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-                Som una Gestoria especialitzada en l'assessorament i administració comercial, 
+                Som una Gestoria especialitzada en l'assessorament i administració comercial,
                 oferint serveis professionals i personalitzats a Vilafranca del Penedès.
               </p>
               <div className="flex justify-center gap-4">
-                <Button 
-                  className="bg-secondary hover:bg-secondary/90"
-                  size="lg"
-                  onClick={() => document.getElementById('contacte').scrollIntoView({ behavior: 'smooth' })}
+                <Button
+                    className="bg-secondary hover:bg-secondary/90"
+                    size="lg"
+                    onClick={() => document.getElementById('contacte').scrollIntoView({behavior: 'smooth'})}
                 >
                   Contacta'ns
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ml-2 h-4 w-4"/>
                 </Button>
-                <Button 
-                  variant="outline"
-                  size="lg"
-                  onClick={() => document.getElementById('serveis').scrollIntoView({ behavior: 'smooth' })}
+                <Button
+                    variant="outline"
+                    size="lg"
+                    onClick={() => document.getElementById('serveis').scrollIntoView({behavior: 'smooth'})}
                 >
                   Els Nostres Serveis
                 </Button>
@@ -160,16 +160,16 @@ export function App() {
         <section id="qui-som" className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
+                initial={{opacity: 0, y: 20}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{duration: 0.5}}
+                viewport={{once: true}}
+                className="text-center mb-16"
             >
               <h2 className="text-3xl font-bold mb-4">Qui Som?</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Som AKIA SL, un equip de professionals especialitzats en l'administració, 
-                gestió i finances. La nostra missió és oferir un servei proper i personalitzat 
+                Som AKIA SL, un equip de professionals especialitzats en l'administració,
+                gestió i finances. La nostra missió és oferir un servei proper i personalitzat
                 als nostres clients de Vilafranca del Penedès.
               </p>
             </motion.div>
@@ -180,11 +180,11 @@ export function App() {
         <section id="serveis" className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
+                initial={{opacity: 0, y: 20}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{duration: 0.5}}
+                viewport={{once: true}}
+                className="text-center mb-16"
             >
               <h2 className="text-3xl font-bold mb-4">Els Nostres Serveis</h2>
               <p className="text-xl text-gray-600">Oferim solucions integrals per al teu negoci</p>
@@ -203,7 +203,7 @@ export function App() {
                     <Card>
                       <CardHeader>
                         <div className="flex items-center gap-4">
-                          <service.icon className="h-8 w-8 text-secondary" />
+                          <service.icon className="h-8 w-8 text-secondary"/>
                           <CardTitle>{service.title}</CardTitle>
                         </div>
                         <p className="text-gray-600 mt-2">{service.description}</p>
@@ -213,7 +213,7 @@ export function App() {
                           {service.items.map((item, i) => (
                               <li key={i} className="flex flex-col items-start">
                                 <div className="flex items-center">
-                                  <CheckCircle className="h-5 w-5 text-secondary mr-2 mt-1 flex-shrink-0" />
+                                  <CheckCircle className="h-5 w-5 text-secondary mr-2 mt-1 flex-shrink-0"/>
                                   <span className="text-gray-600">{item.name}</span>
                                 </div>
                                 <div className="ml-7 text-gray-500">
@@ -235,10 +235,10 @@ export function App() {
         <section id="packs" className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
+                initial={{opacity: 0, y: 20}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{duration: 0.5}}
+                viewport={{once: true}}
                 className="text-center mb-16"
             >
               <h2 className="text-3xl font-bold mb-4 text-primary">Els Nostres Packs</h2>
@@ -249,10 +249,10 @@ export function App() {
               {packs.map((pack, index) => (
                   <motion.div
                       key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
-                      viewport={{ once: true }}
+                      initial={{opacity: 0, y: 20}}
+                      whileInView={{opacity: 1, y: 0}}
+                      transition={{duration: 0.5, delay: index * 0.1}}
+                      viewport={{once: true}}
                       className="bg-white p-6 rounded-lg shadow-lg text-center border-2 border-primary hover:bg-primary hover:text-white transition duration-300"
                   >
                     <h3 className="text-xl font-semibold mb-2">{pack.name}</h3>
@@ -268,29 +268,30 @@ export function App() {
         <section id="equip" className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
+                initial={{opacity: 0, y: 20}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{duration: 0.5}}
+                viewport={{once: true}}
+                className="text-center mb-16"
             >
               <h2 className="text-3xl font-bold mb-4">El Nostre Equip</h2>
-              <p className="text-xl text-gray-600">Professionals compromesos amb el teu èxit i el de la teva empresa!</p>
+              <p className="text-xl text-gray-600">Professionals compromesos amb el teu èxit i el de la teva
+                empresa!</p>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {teamMembers.map((member, index) => (
-                <motion.div
-                  key={member.name}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="text-center"
-                >
-                  <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                  <p className="text-gray-600">{member.role}</p>
-                </motion.div>
+                  <motion.div
+                      key={member.name}
+                      initial={{opacity: 0, y: 20}}
+                      whileInView={{opacity: 1, y: 0}}
+                      transition={{duration: 0.5, delay: index * 0.1}}
+                      viewport={{once: true}}
+                      className="text-center"
+                  >
+                    <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
+                    <p className="text-gray-600">{member.role}</p>
+                  </motion.div>
               ))}
             </div>
           </div>
@@ -300,11 +301,11 @@ export function App() {
         <section id="contacte" className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
+                initial={{opacity: 0, y: 20}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{duration: 0.5}}
+                viewport={{once: true}}
+                className="text-center mb-16"
             >
               <h2 className="text-3xl font-bold mb-4">Contacta amb Nosaltres</h2>
               <p className="text-xl text-gray-600">Estem aquí per ajudar-te</p>
@@ -317,36 +318,36 @@ export function App() {
                     <CardTitle>Envia'ns un missatge</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ContactForm />
+                    <ContactForm/>
                   </CardContent>
                 </Card>
               </div>
 
               <div className="space-y-8">
                 <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5 }}
-                  viewport={{ once: true }}
-                  className="bg-white p-6 rounded-lg shadow-lg"
+                    initial={{opacity: 0, x: 20}}
+                    whileInView={{opacity: 1, x: 0}}
+                    transition={{duration: 0.5}}
+                    viewport={{once: true}}
+                    className="bg-white p-6 rounded-lg shadow-lg"
                 >
-                  <MapPin className="h-10 w-10 text-secondary mb-4" />
+                  <MapPin className="h-10 w-10 text-secondary mb-4"/>
                   <h3 className="text-lg font-semibold mb-2">Adreça</h3>
                   <p className="text-gray-600">
                     Plaça de la Sardana, 4
-                    <br />
+                    <br/>
                     08720, Vilafranca del Penedès
                   </p>
                 </motion.div>
 
                 <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  viewport={{ once: true }}
-                  className="bg-white p-6 rounded-lg shadow-lg"
+                    initial={{opacity: 0, x: 20}}
+                    whileInView={{opacity: 1, x: 0}}
+                    transition={{duration: 0.5, delay: 0.2}}
+                    viewport={{once: true}}
+                    className="bg-white p-6 rounded-lg shadow-lg"
                 >
-                  <Mail className="h-10 w-10 text-secondary mb-4" />
+                  <Mail className="h-10 w-10 text-secondary mb-4"/>
                   <h3 className="text-lg font-semibold mb-2">Correu</h3>
                   <a href="mailto:gestoria.akia@gmail.com" className="text-gray-600 hover:text-secondary">
                     gestoria.akia@gmail.com
@@ -354,13 +355,13 @@ export function App() {
                 </motion.div>
 
                 <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
-                  viewport={{ once: true }}
-                  className="bg-white p-6 rounded-lg shadow-lg"
+                    initial={{opacity: 0, x: 20}}
+                    whileInView={{opacity: 1, x: 0}}
+                    transition={{duration: 0.5, delay: 0.4}}
+                    viewport={{once: true}}
+                    className="bg-white p-6 rounded-lg shadow-lg"
                 >
-                  <Phone className="h-10 w-10 text-secondary mb-4" />
+                  <Phone className="h-10 w-10 text-secondary mb-4"/>
                   <h3 className="text-lg font-semibold mb-2">Telèfon</h3>
                   <a href="tel:+34938901234" className="text-gray-600 hover:text-secondary">
                     +34 938 90 12 34
@@ -374,7 +375,7 @@ export function App() {
 
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
               <h3 className="text-lg font-semibold mb-4">AKIA Gestoria</h3>
               <p className="text-gray-400">
