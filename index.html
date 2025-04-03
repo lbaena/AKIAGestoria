@@ -13,7 +13,22 @@
 	<body>
 		<div id="root"></div>
 		<script type="module" src="/src/main.jsx"></script>
-		<div class="calendly-inline-widget" data-url="https://calendly.com/innovaclicceo" style="min-width:320px;height:630px;"></div>
+		<!-- Calendly badge widget begin -->
+		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				Calendly.initBadgeWidget({
+					url: 'https://calendly.com/innovaclicceo/fem-un-cafe?hide_gdpr_banner=1&background_color=64d2dc&primary_color=f79e18',
+					text: "Fem un cafè? Explica'ns les teves necessitats.",
+					color: '#64d2dc',
+					textColor: '#ffffff'
+				});
 
+				document.getElementById('demana-cita').onclick = function() {
+					Calendly.showPopupWidget('https://calendly.com/innovaclicceo/fem-un-cafe?hide_gdpr_banner=1&background_color=64d2dc&primary_color=f79e18');
+				};
+			};
+		</script>		<!-- Calendly badge widget end -->
 	</body>
 </html>
