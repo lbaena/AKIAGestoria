@@ -60,7 +60,7 @@ const teamMembers = [
     role: "Soci Fundador",
   },
   {
-    name: "Nadia Monserrat Arias",
+    name: "Nadia Monserratte Arias",
     role: "Sòcia Fundadora",
   },
   {
